@@ -1,0 +1,15 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+}
+
+.header-logo-img {
+    cursor: pointer;
+}
