@@ -2,14 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
 
 * {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+}
+
+button {
+    background: transparent;
+    outline: none;
 }
 
 .header-logo-img {
     cursor: pointer;
+}
+
+.header-nav-list {
+    list-style: none;
+}
+
+.header-nav-list li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header-nav-list li a {
+    text-decoration: none;
+    font-size: 18px;
 }

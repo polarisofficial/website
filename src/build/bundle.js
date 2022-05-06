@@ -16,7 +16,7 @@
   \************************/
 /***/ (() => {
 
-eval("\r\nvar test = document.getElementById(\"test\");\r\nif (test != null) {\r\n    test.innerText = \"Replaced text\";\r\n}\r\n\n\n//# sourceURL=webpack://website/./src/ts/main.ts?");
+eval("\r\n\n\n//# sourceURL=webpack://website/./src/ts/main.ts?");
 
 /***/ })
 
