@@ -1,12 +1,16 @@
 /* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
 
+/**
+ *
+ * Using the icons8's assets is not allowed until I solve the problem about a license of icons8.
+ *
+ **/
 * {
     font-family: "Rajdhani", sans-serif;
     font-weight: normal;
     font-size: 16px;
     color: white;
-
     margin: 0;
     padding: 0;
     border: 0;
@@ -26,6 +30,7 @@ button {
 
 .header-logo-img {
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 .header-nav-list {
@@ -40,4 +45,17 @@ button {
 .header-nav-list li a {
     text-decoration: none;
     font-size: 18px;
+
+    transition: color 0.4s;
+}
+
+.header-nav-list li a:hover {
+    color: lightgray;
+}
+
+.header-settings-btn {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    cursor: pointer;
 }
