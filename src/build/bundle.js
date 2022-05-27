@@ -16,7 +16,7 @@
   \************************/
 /***/ (() => {
 
-eval("\r\n\n\n//# sourceURL=webpack://website/./src/ts/main.ts?");
+eval("\r\n/** Comment for push test **/ \r\n\n\n//# sourceURL=webpack://website/./src/ts/main.ts?");
 
 /***/ })
 

@@ -1,11 +1,6 @@
 /* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
 
-/**
- *
- * Using the icons8's assets is not allowed until I solve the problem about a license of icons8.
- *
- **/
 * {
     font-family: "Rajdhani", sans-serif;
     font-weight: normal;
@@ -16,11 +11,21 @@
     border: 0;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+}
+
 header {
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    /*backdrop-filter: blur(10px);*/
 }
 
 button {
@@ -58,4 +63,31 @@ button {
     height: 60px;
     margin: 0 20px;
     cursor: pointer;
+}
+
+main {
+    height: 80%;
+}
+
+footer {
+    height: 10%;
+}
+
+.footer-meta-list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+}
+
+.footer-meta-list li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.footer-meta-list li a {
+    text-decoration: none;
+    font-size: 15px;
 }
