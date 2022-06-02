@@ -1,11 +1,14 @@
 /* Import fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/* We need to rework on the design */
 
 * {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: normal;
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
     font-size: 16px;
-    color: white;
+    color: #ffffff;
+
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,79 +18,35 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    background-image: linear-gradient(45deg, #0f0c29, #24243e);
 }
 
 header {
-    height: 10%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    /*background-color: rgba(255, 255, 255, 0.2);*/
-    /*backdrop-filter: blur(10px);*/
+    justify-content: center;
 }
 
-button {
-    background: transparent;
-    outline: none;
+.header-logo {
+    padding: 10px 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
 }
 
 .header-logo-img {
-    cursor: pointer;
-    padding: 10px 20px;
+    padding-right: 5px;
 }
 
-.header-nav-list {
-    list-style: none;
-}
-
-.header-nav-list li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.header-nav-list li a {
-    text-decoration: none;
-    font-size: 18px;
-
-    transition: color 0.4s;
-}
-
-.header-nav-list li a:hover {
-    color: lightgray;
-}
-
-.header-settings-btn {
-    width: 60px;
-    height: 60px;
-    margin: 0 20px;
-    cursor: pointer;
+.header-logo-text {
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
 }
 
 main {
-    height: 80%;
 }
 
 footer {
-    height: 10%;
-}
-
-.footer-meta-list {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    list-style: none;
-}
-
-.footer-meta-list li {
-    display: inline-block;
-    padding: 0 30px;
-}
-
-.footer-meta-list li a {
-    text-decoration: none;
-    font-size: 15px;
 }
