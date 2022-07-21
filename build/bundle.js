@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/ts/main.ts":
-/*!************************!*\
-  !*** ./src/ts/main.ts ***!
-  \************************/
+/***/ "./ts/main.ts":
+/*!********************!*\
+  !*** ./ts/main.ts ***!
+  \********************/
 /***/ (() => {
 
-eval("\r\n/** Comment for push test **/ \r\n\n\n//# sourceURL=webpack://website/./src/ts/main.ts?");
+eval("\r\n/** Comment for push test **/ \r\n\n\n//# sourceURL=webpack://website/./ts/main.ts?");
 
 /***/ })
 
@@ -27,7 +27,7 @@ eval("\r\n/** Comment for push test **/ \r\n\n\n//# sourceURL=webpack://website/
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/ts/main.ts"]();
+/******/ 	__webpack_modules__["./ts/main.ts"]();
 /******/ 	
 /******/ })()
 ;
