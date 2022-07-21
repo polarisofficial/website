@@ -22,6 +22,6 @@ Polaris is now under developing.
 We are working so hard but the release date is not determined yet.   
 
 ### What platform does Polaris support?
-You can play Polaris if you have the Internet connection and modern browser!
+You can play Polaris if you have the Internet connection and modern browser!  
 Because Polaris is written in html, css and JavaScript (TypeScript)
 
