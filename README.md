@@ -7,7 +7,7 @@ It uses **Machine Learning** to generate a song map.
 - Generate a song map by using **Machine Learning**
 - Modern beautiful UI
 
-### TODO List
+### TODO
 *****
 - [x] Publish a website
 - [ ] Add images to README.md
