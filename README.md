@@ -1,5 +1,5 @@
 # Polaris
-[Polaris](https://polarisofficial.github.io/website/ "Polaris official website") is a new rhythm game.
+[Polaris](https://polarisofficial.github.io/website/ "Polaris official website") is a new rhythm game.  
 It uses **Machine Learning** to generate a song map.
 ### Features
 *****
