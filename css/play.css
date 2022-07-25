@@ -113,15 +113,12 @@ body {
     gap: 0;
 }
 
-/* TODO: ずれを治す必要あり */
 #lane_judge_area {
     flex-shrink: 0;
     flex-grow: 0;
 
     aspect-ratio: 1 / 1;
     height: 60%;
-
-    background-image: url("../assets/play/note_base.png");
 }
 
 .lane_effect {
@@ -134,11 +131,11 @@ body {
 }
 
 #lane_effect_left {
-    background-image: url("../assets/play/lane_effect_red.png");
+    background: linear-gradient(90deg, #FF6060, #00000000);
 }
 
 #lane_effect_right {
-    background-image: url("../assets/play/lane_effect_blue.png");
+    background: linear-gradient(90deg, #00000000, #6060FF);
 }
 
 #container_footer {
