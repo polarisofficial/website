@@ -16,7 +16,7 @@
   \********************/
 /***/ (() => {
 
-eval("\r\n/** Comment for push test **/ \r\n\n\n//# sourceURL=webpack://website/./ts/main.ts?");
+eval("\r\nvar laneEffectLeft = document.getElementById('lane_effect_left');\r\nvar laneEffectRight = document.getElementById('lane_effect_right');\r\ndocument.addEventListener('keydown', function (e) { return onKeyDown(e); });\r\ndocument.addEventListener('keyup', function (e) { return onKeyUp(e); });\r\nfunction onKeyDown(e) {\r\n    if (laneEffectLeft == null || laneEffectRight == null) {\r\n        return;\r\n    }\r\n    if (e.isComposing || e.keyCode === 229) {\r\n        return;\r\n    }\r\n    if (e.key == 'f') {\r\n        laneEffectLeft.style.visibility = \"visible\";\r\n    }\r\n    if (e.key == 'j') {\r\n        laneEffectRight.style.visibility = \"visible\";\r\n    }\r\n}\r\nfunction onKeyUp(e) {\r\n    if (laneEffectLeft == null || laneEffectRight == null) {\r\n        return;\r\n    }\r\n    if (e.isComposing || e.keyCode === 229) {\r\n        return;\r\n    }\r\n    if (e.key == 'f') {\r\n        laneEffectLeft.style.visibility = \"hidden\";\r\n    }\r\n    if (e.key == 'j') {\r\n        laneEffectRight.style.visibility = \"hidden\";\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack://website/./ts/main.ts?");
 
 /***/ })
 

@@ -1,0 +1,183 @@
+:root {
+    --header_height: 20%;
+    --lane_height: 20%;
+    --footer_height: 60%;
+
+    --border_default: 1px solid rgba(245, 245, 245, 0.8);
+}
+
+body {
+    background-image: url("../assets/play/wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container_header, #container_lane, #container_footer {
+    width: 100%;
+    background-color: var(--background_color);
+}
+
+/* Header */
+#container_header {
+    display: flex;
+    justify-content: space-between;
+
+    height: var(--header_height);
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));*/
+}
+
+/* Profile */
+#wrapper_profile {
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#profile_avatar {
+    aspect-ratio: 1 / 1;
+    height: 35%;
+
+    border: 1px solid white;
+}
+
+#profile_name {
+    font-size: 0.8rem;
+}
+
+/* Combo */
+#wrapper_combo {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.combo_number {
+    font-weight: var(--font_weight_regular);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.combo_label {
+    line-height: 1.0rem;
+}
+
+/* Precision */
+#wrapper_precision {
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.precision_number {
+    font-weight: var(--font_weight_regular);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.precision_label {
+    line-height: 1.0rem;
+
+    margin-right: 20px;
+}
+
+/* Lane */
+#container_lane {
+    width: 100%;
+    height: var(--lane_height);
+
+    background-color: var(--background_color);
+    backdrop-filter: blur(50px);
+    border-top: var(--border_default);
+    border-bottom: var(--border_default);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+/* TODO: ずれを治す必要あり */
+#lane_judge_area {
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    aspect-ratio: 1 / 1;
+    height: 60%;
+
+    background-image: url("../assets/play/note_base.png");
+}
+
+.lane_effect {
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    height: 100%;
+
+    visibility: hidden;
+}
+
+#lane_effect_left {
+    background-image: url("../assets/play/lane_effect_red.png");
+}
+
+#lane_effect_right {
+    background-image: url("../assets/play/lane_effect_blue.png");
+}
+
+#container_footer {
+    height: var(--footer_height);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Judge */
+#wrapper_judge_state {
+    margin-top: 20px;
+}
+
+#judge_state {
+    /* TODO: need to color this */
+}
+
+/* Song information */
+#wrapper_song_info {
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#song_name {
+    font-weight: var(--font_weight_regular);
+    font-size: 1.2rem;
+}
+
+#song_level {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+}

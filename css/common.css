@@ -1,52 +1,29 @@
-/* Import fonts from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+    /* Colours */
+    --primary_color: #ffffff;
+    --background_color: rgba(5, 5, 5, 0.2);
+    --text_color: rgb(255, 255, 255);
 
-/* We need to rework on the design */
+    /* Variables for font */
+    --font_family_main: 'Zen Kaku Gothic New', sans-serif;
+    --font_weight_light: 300;
+    --font_weight_regular: 400;
+    --font_weight_medium: 500;
+    --font_weight_bold: 700;
+    --font_size: 20px;
+}
 
-* {
-    font-family: "Manrope", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #ffffff;
-
-    margin: 0;
-    padding: 0;
-    border: 0;
+html {
+    font-family: var(--font_family_main);
+    font-weight: var(--font_weight_light);
+    font-size: var(--font_size);
+    color: var(--text_color);
 }
 
 body {
     width: 100vw;
     height: 100vh;
-
-    background-image: linear-gradient(45deg, #0f0c29, #24243e);
-}
-
-header {
-    display: flex;
-    justify-content: center;
-}
-
-.header-logo {
-    padding: 10px 0;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-}
-
-.header-logo-img {
-    padding-right: 5px;
-}
-
-.header-logo-text {
-    padding-left: 5px;
-    font-weight: 500;
-    font-size: 26px;
-    text-align: center;
-}
-
-main {
-}
-
-footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }

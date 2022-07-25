@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja" translate="no">
+<head>
+	<meta charset="UTF-8">
+	<title>SONG NAME</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/play.css">
+</head>
+<body>
+<div id="container_header">
+	<div id="wrapper_profile">
+		<img id="profile_avatar" src="./assets/avatar.png" alt="PLAYER AVATAR">
+		<div id="profile_name">PLAYER NAME</div>
+	</div>
+	<div id="wrapper_combo">
+		<div class="combo_number">102</div>
+		<div class="combo_label">COMBO</div>
+	</div>
+	<div id="wrapper_precision">
+		<div class="precision_number">100.0</div>
+		<div class="precision_label">%</div>
+	</div>
+</div>
+<div id="container_lane">
+	<div id="lane_effect_left" class="lane_effect"></div>
+	<div id="lane_judge_area"></div>
+	<div id="lane_effect_right" class="lane_effect"></div>
+</div>
+<div id="container_footer">
+	<div id="wrapper_judge_state">
+		<div id="judge_state" hidden>EXCELLENT</div>
+	</div>
+	<div id="wrapper_song_info">
+		<div id="song_level">
+			<div id="song_level_label">Lv.</div>
+			<div id="song_level_number">12</div>
+		</div>
+		<div id="song_name">Missed Dream</div>
+	</div>
+</div>
+<script type="text/javascript" src="build/bundle.js"></script>
+</body>
+</html>
