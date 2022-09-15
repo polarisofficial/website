@@ -2,12 +2,10 @@
     --header_height: 20%;
     --lane_height: 20%;
     --footer_height: 60%;
-
-    --border_default: 1px solid rgba(245, 245, 245, 0.8);
 }
 
 body {
-    background-image: url("../assets/play/wallpaper.jpg");
+    background-image: url("../assets/wallpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

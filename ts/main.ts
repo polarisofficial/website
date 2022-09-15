@@ -1,14 +1,11 @@
 const laneEffectLeft = document.getElementById('lane_effect_left')
 const laneEffectRight = document.getElementById('lane_effect_right')
 
-document.addEventListener('keydown', e => onKeyDown(e))
-document.addEventListener('keyup', e => onKeyUp(e))
-
-function onKeyDown(e: KeyboardEvent) {
+export function onKeyDown(e: KeyboardEvent): void {
     if (laneEffectLeft == null || laneEffectRight == null) {
         return;
     }
-    if (e.isComposing || e.keyCode === 229) {
+    if (e.isComposing) {
         return;
     }
     if (e.key == 'f') {
@@ -19,11 +16,11 @@ function onKeyDown(e: KeyboardEvent) {
     }
 }
 
-function onKeyUp(e: KeyboardEvent): void {
+export function onKeyUp(e: KeyboardEvent): void {
     if (laneEffectLeft == null || laneEffectRight == null) {
         return;
     }
-    if (e.isComposing || e.keyCode === 229) {
+    if (e.isComposing) {
         return;
     }
     if (e.key == 'f') {

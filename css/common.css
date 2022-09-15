@@ -1,8 +1,10 @@
 :root {
     /* Colours */
-    --primary_color: #ffffff;
+    --primary_color: rgba(255, 255, 255, 1.0);
     --background_color: rgba(5, 5, 5, 0.2);
-    --text_color: rgb(255, 255, 255);
+    --text_color: rgba(255, 255, 255, 1.0);
+
+    --border_default: 1px solid rgba(245, 245, 245, 0.8);
 
     /* Variables for font */
     --font_family_main: 'Zen Kaku Gothic New', sans-serif;
