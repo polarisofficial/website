@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./ts/main.ts\");\n\r\ndocument.addEventListener('keydown', function (e) { return _main__WEBPACK_IMPORTED_MODULE_0__.onKeyDown(e); });\r\ndocument.addEventListener('keyup', function (e) { return _main__WEBPACK_IMPORTED_MODULE_0__.onKeyUp(e); });\r\nfunction changeScene() {\r\n    window.location.href = './upload.html';\r\n}\r\n\n\n//# sourceURL=webpack://website/./ts/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"mouseClick\": () => (/* binding */ mouseClick)\n/* harmony export */ });\n// mouseがクリックされたら、play.htmlに遷移する\nfunction mouseClick() {\n    window.location.href = \"play.html\";\n}\n\n\n//# sourceURL=webpack://website/./ts/index.ts?");
 
 /***/ }),
 
@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"onKeyDown\": () => (/* binding */ onKeyDown),\n/* harmony export */   \"onKeyUp\": () => (/* binding */ onKeyUp)\n/* harmony export */ });\nvar laneEffectLeft = document.getElementById('lane_effect_left');\r\nvar laneEffectRight = document.getElementById('lane_effect_right');\r\nfunction onKeyDown(e) {\r\n    if (laneEffectLeft == null || laneEffectRight == null) {\r\n        return;\r\n    }\r\n    if (e.isComposing) {\r\n        return;\r\n    }\r\n    if (e.key == 'f') {\r\n        laneEffectLeft.style.visibility = \"visible\";\r\n    }\r\n    if (e.key == 'j') {\r\n        laneEffectRight.style.visibility = \"visible\";\r\n    }\r\n}\r\nfunction onKeyUp(e) {\r\n    if (laneEffectLeft == null || laneEffectRight == null) {\r\n        return;\r\n    }\r\n    if (e.isComposing) {\r\n        return;\r\n    }\r\n    if (e.key == 'f') {\r\n        laneEffectLeft.style.visibility = \"hidden\";\r\n    }\r\n    if (e.key == 'j') {\r\n        laneEffectRight.style.visibility = \"hidden\";\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack://website/./ts/main.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _play__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./play */ \"./ts/play.ts\");\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ \"./ts/index.ts\");\n\n\ndocument.addEventListener('keydown', function (e) { return _play__WEBPACK_IMPORTED_MODULE_0__.onKeyDown(e); });\ndocument.addEventListener('keyup', function (e) { return _play__WEBPACK_IMPORTED_MODULE_0__.onKeyUp(e); });\ndocument.addEventListener('mousedown', function (e) { return _index__WEBPACK_IMPORTED_MODULE_1__.mouseClick(); });\n\n\n//# sourceURL=webpack://website/./ts/main.ts?");
+
+/***/ }),
+
+/***/ "./ts/play.ts":
+/*!********************!*\
+  !*** ./ts/play.ts ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"onKeyDown\": () => (/* binding */ onKeyDown),\n/* harmony export */   \"onKeyUp\": () => (/* binding */ onKeyUp)\n/* harmony export */ });\nvar laneEffectLeft = document.getElementById('lane_effect_left');\nvar laneEffectRight = document.getElementById('lane_effect_right');\nfunction onKeyDown(e) {\n    if (laneEffectLeft == null || laneEffectRight == null) {\n        return;\n    }\n    if (e.isComposing) {\n        return;\n    }\n    if (e.key == 'f') {\n        laneEffectLeft.style.visibility = \"visible\";\n    }\n    if (e.key == 'j') {\n        laneEffectRight.style.visibility = \"visible\";\n    }\n}\nfunction onKeyUp(e) {\n    if (laneEffectLeft == null || laneEffectRight == null) {\n        return;\n    }\n    if (e.isComposing) {\n        return;\n    }\n    if (e.key == 'f') {\n        laneEffectLeft.style.visibility = \"hidden\";\n    }\n    if (e.key == 'j') {\n        laneEffectRight.style.visibility = \"hidden\";\n    }\n}\n\n\n//# sourceURL=webpack://website/./ts/play.ts?");
 
 /***/ })
 
@@ -90,7 +100,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./ts/index.ts");
+/******/ 	var __webpack_exports__ = __webpack_require__("./ts/main.ts");
 /******/ 	
 /******/ })()
 ;
