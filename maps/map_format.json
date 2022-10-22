@@ -1,0 +1,22 @@
+{
+  "mapName" : "Missed Dream",
+  "mapLevel" : 10,
+  "notes" : [
+    {
+      "type" : "red",
+      "time" : "00:03:00"
+    },
+    {
+      "type" : "blue",
+      "time" : "00:05:00"
+    },
+    {
+      "type" : "red",
+      "time" : "00:07:00"
+    },
+    {
+      "type" : "blue",
+      "time" : "00:09:00"
+    }
+  ]
+}
