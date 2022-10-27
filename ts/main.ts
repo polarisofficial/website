@@ -1,6 +1,19 @@
-import * as play from "./play"
-import * as index from "./index"
+import {Polaris} from "./polaris";
+import {TARGET_FPS} from "./constants";
 
-document.addEventListener('keydown', e => play.onKeyDown(e))
-document.addEventListener('keyup', e => play.onKeyUp(e))
-document.addEventListener('mousedown', e => index.mouseClick())
+init()
+gameLoop()
+
+function init() {
+    Polaris.getInstance().init()
+}
+
+function gameLoop() {
+    const begin: number = performance.now()
+
+    Polaris.getInstance().update()
+
+    const end: number = performance.now()
+
+    setTimeout(gameLoop, (1000 / TARGET_FPS) - (end - begin))
+}

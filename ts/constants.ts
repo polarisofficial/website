@@ -1,0 +1,1 @@
+export const TARGET_FPS: number = 60
