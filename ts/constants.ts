@@ -1,1 +1,1 @@
-export const TARGET_FPS: number = 60
+export const TARGET_FPS: number = 60;
