@@ -12,6 +12,7 @@ function gameLoop() {
     const begin: number = performance.now()
 
     Polaris.getInstance().update()
+    Polaris.getInstance().render()
 
     const end: number = performance.now()
 

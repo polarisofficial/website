@@ -10,7 +10,9 @@ body {
     background-repeat: no-repeat;
 }
 
-#container_header, #container_lane, #container_footer {
+#container_header,
+#container_lane,
+#container_footer {
     width: 100%;
     background-color: var(--background_color);
 }
@@ -129,11 +131,11 @@ body {
 }
 
 #lane_effect_left {
-    background: linear-gradient(90deg, #FF6060, #00000000);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.65), #00000000);
 }
 
 #lane_effect_right {
-    background: linear-gradient(90deg, #00000000, #6060FF);
+    background: linear-gradient(-90deg, rgba(0, 0, 255, 0.65), #00000000);
 }
 
 #container_footer {
