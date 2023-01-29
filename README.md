@@ -10,8 +10,8 @@ It uses **Machine Learning** to generate a song map.
 ### TODO
 *****
 - [x] Publish a website
-- [ ] Add images to README.md
-- [ ] Create official logo
+- [x] Add images to README.md
+- [x] Create official logo
 - [ ] Create basic system
 - [ ] Create map generator
 
