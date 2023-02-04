@@ -1,5 +1,5 @@
 {
-  "mapName" : "Missed Dream",
+  "mapName" : "Song Title",
   "mapLevel" : 10,
   "notes" : [
     {
@@ -17,6 +17,16 @@
     {
       "type" : "blue",
       "time" : "00:09:00"
+    },
+    {
+      "type" : "blue",
+      "time" : "00:10:00",
+      "duration" : "00:03:00"
+    },
+    {
+      "type" : "red",
+      "time" : "00:15:00",
+      "duration" : "00:08:00"
     }
   ]
 }
